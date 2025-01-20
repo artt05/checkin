@@ -1,0 +1,23 @@
+ion-card {
+  margin: 1rem 0;
+}
+
+ion-card-header {
+  display: flex;
+}
+
+ion-avatar {
+  background-color: var(--ion-color-success-light);
+  border-radius: 50%;
+}
+
+ion-label h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+ion-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}

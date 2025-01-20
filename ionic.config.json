@@ -1,0 +1,7 @@
+{
+  "name": "checkin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
