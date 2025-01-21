@@ -5,4 +5,36 @@
 
 ion-card {
   margin-bottom: 1rem;
+  display: flex;
+  margin: 24px 0px;
+  ion-card-header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    ion-card-subtitle {
+      margin-top: 10px;
+    }
+    ion-card-title {
+      font-size: 20px;
+    }
+  }
+}
+.edit-buttons {
+  justify-content: flex-end;
+  position: absolute;
+  right: 7px;
+  top: 15px;
+}
+
+ion-button {
+  font-size: 13px;
+}
+ion-chip {
+  font-size: clamp(12px, 03975rem, 9px);
+}
+ion-item {
+  --background: var(
+    --ion-card-background,
+    #fff
+  ); /* Match the card background color */
 }

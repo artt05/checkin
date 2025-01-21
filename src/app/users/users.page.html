@@ -1,41 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Users</ion-title>
-    <ion-buttons slot="end">
-      <ion-button color="success">
-        <ion-icon slot="icon-only" name="add"></ion-icon>
-        Add User
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <ion-buttons slot="end">
+    <ion-button color="success">
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+      Add User
+    </ion-button> </ion-buttons
+  ><ion-buttons slot="end">
+    <ion-button color="success">
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+      Add User
+    </ion-button>
+  </ion-buttons>
   <ion-list>
     <ion-card *ngFor="let user of users">
-      <ion-card-header>
-        <ion-card-title>{{ user.name }}</ion-card-title>
-        <ion-card-subtitle>{{ user.email }}</ion-card-subtitle>
-      </ion-card-header>
+      <div class="card-content">
+        <ion-card-header>
+          <ion-card-title>{{ user.name }}</ion-card-title>
+          <ion-card-subtitle>{{ user.email }}</ion-card-subtitle>
+        </ion-card-header>
 
-      <ion-card-content>
-        <div class="tags">
-          <ion-chip *ngFor="let tag of user.tags" color="tertiary">
-            <ion-label>{{ tag }}</ion-label>
-          </ion-chip>
-        </div>
-      </ion-card-content>
-
-      <ion-footer>
-        <ion-buttons>
-          <ion-button fill="clear" color="primary">
-            <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
-          </ion-button>
-          <ion-button fill="clear" color="danger">
-            <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-      </ion-footer>
+        <ion-card-content>
+          <div class="tags">
+            <ion-chip *ngFor="let tag of user.tags" color="success">
+              <ion-label>{{ tag }}</ion-label>
+            </ion-chip>
+          </div>
+        </ion-card-content>
+      </div>
+      <ion-buttons class="edit-buttons">
+        <ion-button fill="clear" color="success">
+          <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="danger">
+          <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-card>
   </ion-list>
 </ion-content>

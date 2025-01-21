@@ -1,4 +1,13 @@
 <ion-content class="ion-padding">
+  <ion-row>
+    <ion-col size="6">
+      <h1 class="profile"><b>Profile</b></h1>
+    </ion-col>
+    <ion-col size="6" class="text-right">
+      <button class="logout">[ -> Logout</button>
+    </ion-col>
+  </ion-row>
+
   <ion-card>
     <ion-card-header>
       <ion-item lines="none">
@@ -9,6 +18,7 @@
             color="success"
           ></ion-icon>
         </ion-avatar>
+
         <ion-label>
           <h2>John Doe</h2>
           <p>ID: 12345</p>
@@ -17,10 +27,15 @@
     </ion-card-header>
     <ion-card-content>
       <p><strong>Email</strong></p>
-      <p>john.doecompan.com</p>
+
+      <p>john.doe&#64;company.com</p>
+      <br />
       <p><strong>Department</strong></p>
+
       <p>Engineering</p>
+      <br />
       <p><strong>Role</strong></p>
+
       <p>Software Developer</p>
     </ion-card-content>
   </ion-card>

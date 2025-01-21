@@ -1,17 +1,16 @@
 ion-content {
-  --background: #000; /* Black background */
   color: white;
 }
 
 .scan-card,
 .activity-card {
-  background: #1a1a1a; /* Dark card background */
-  color: white;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 ion-item {
-  --background: #1a1a1a;
+  --background: var(
+    --ion-card-background
+  ); /* Match the card background color */
 }
 .qr-frame {
   width: 150px;
@@ -54,4 +53,7 @@ ion-card-header {
   ion-card-subtitle {
     margin-top: 10px;
   }
+}
+ion-card {
+  margin: 24px 0px;
 }

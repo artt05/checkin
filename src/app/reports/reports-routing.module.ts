@@ -6,8 +6,15 @@ import { ReportsPage } from './reports.page';
 const routes: Routes = [
   {
     path: '',
-    component: ReportsPage
-  }
+    component: ReportsPage,
+  },
+  {
+    path: 'user/:name',
+    loadChildren: () =>
+      import('../user-report/user-report.module').then(
+        (m) => m.UserReportPageModule
+      ),
+  },
 ];
 
 @NgModule({

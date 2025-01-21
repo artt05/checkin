@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar lines="none">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/reports" text=""></ion-back-button>
+      </ion-buttons>
+      <ion-title>John Doe's Reports</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-buttons slot="start"> </ion-buttons>
+
+    <div class="dropdown-container">
+      <ion-select placeholder="January 2024" interface="popover">
+        <ion-select-option value="january-2024">January 2024</ion-select-option>
+        <ion-select-option value="february-2024"
+          >February 2024</ion-select-option
+        >
+        <!-- Add more months as needed -->
+      </ion-select>
+    </div>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-card-title class="date-container">2024-01-15</ion-card-title>
+        <div class="time-container">
+          <p>In: <strong>09:00 AM</strong></p>
+          <p>Out: <strong>05:00 PM</strong></p>
+          <p class="hours-container"><strong>8h</strong></p>
+        </div>
+        <div class="hours-container"></div>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>

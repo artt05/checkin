@@ -1,0 +1,73 @@
+.dropdown-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  ion-select {
+    width: 155px;
+    --border-radius: 10px;
+  }
+}
+
+ion-card {
+  padding: 0px;
+  border-radius: 10px;
+  margin: 24px 0px;
+}
+ion-select::part(placeholder) {
+  padding-left: 10px; /* Adjust the padding value as needed */
+  padding-right: 10px; /* Optional, for symmetrical padding */
+}
+
+.date-container {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.hours-container {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+
+  ion-back-button {
+    color: #9b9c9b;
+  }
+  h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+ion-toolbar {
+  --background: var(--ion-background-color); /* Matches body background */
+  --color: var(--ion-text-color); /* Matches body text color */
+  --border-width: 0; /* Remove any border width */
+  --ion-border-color: transparent; /* Ensure border is transparent */
+  border: none !important; /* Ensure no inline border */
+  box-shadow: none !important; /* Remove shadow effect */
+  --height: 61px; /* Set the height of the toolbar */
+  height: 61px;
+  align-items: center;
+  padding: 10px;
+  padding-left: 10px;
+  padding-top: 10px !important;
+}
+ion-item {
+  --background: var(
+    --ion-card-background,
+    #fff
+  ); /* Match the card background color */
+}

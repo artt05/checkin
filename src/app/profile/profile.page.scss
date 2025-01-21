@@ -21,3 +21,52 @@ ion-button {
   justify-content: flex-end;
   margin-top: 1rem;
 }
+
+.text-right {
+  text-align: right;
+}
+
+.profile {
+  margin: 0;
+}
+.header-row {
+  display: flex; /* Aktivizon Flexbox */
+  align-items: center; /* Centron vertikalisht elementet */
+  justify-content: space-between; /* Vendos elementet në skaje */
+}
+
+.profile-col {
+  text-align: left; /* Teksti në anën e majtë */
+}
+
+.logout-col {
+  text-align: right; /* Butoni në anën e djathtë */
+  right: 20px;
+}
+
+.logout {
+  background-color: transparent; /* Heq sfondin */
+  border: none; /* Heq kufirin */
+  font-size: 16px; /* Madhësia e tekstit */
+  display: flex; /* Aktivizon Flexbox për përmbajtjen e butonit */
+  align-items: center; /* Centron vertikalisht ikonën dhe tekstin */
+  gap: 8px; /* Hapësirë midis ikonës dhe tekstit */
+  cursor: pointer; /* Ndryshon kursorin kur kalon mbi buton */
+}
+
+.logout img {
+  width: 20px; /* Madhësia e ikonës */
+  height: 20px;
+}
+
+.text-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+ion-item {
+  --background: var(
+    --ion-card-background,
+    #fff
+  ); /* Match the card background color */
+}
